@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+body{
+    min-height: 100vh;
+    background-color: #061a8d;
+}
+
+.Quiz-header-container{
+    width: 100%;
+    margin-top: 20px;
+}
+.Quiz-header{
+    text-align: center;
+}
+.ques_num{
+    margin-left: 10px;
+}
+#ques_2,#ques_3,#ques_4,#ques_5{
+    display: none;
+    
+}
+.questions{
+    width: 100%;
+}
+.ques_1,.ans_1,.ans_2{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+}
+.ans_1,.ans_2{
+    margin-right: 3em;
+    position: relative;
+}
+input[type='radio']{
+    margin-right: 10px;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -2px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #fff;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -2px;
+    position: relative;
+    background-color: #00f7ff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input[type='radio']:checked~label{
+    color: #00f7ff;
+    text-shadow:2px 2px 5px #00f7ff;
+}
+.submitButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.submitButton button{
+    color: #000;
+    background-color: #00d9ff;
+    margin-top: 2em;
+    padding: 10px 20px;
+    font-size: 28px;
+    width: 20%;
+    cursor: pointer;
+    font-weight: 700;
+    color: #00f;
+    transition: .5s;
+    box-shadow: 0 0 10px #00f7ff;
+}
+.submitButton button:hover{
+    background-color: #0dbcdb;
+}
+.buttonResult{
+    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#buttonResult{
+    background-color: #00f;
+    color: #00f7ff;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px #00f7ff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+#buttonResult:hover{
+    background-color: #1717cc;
+}
+.Results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20% ;
+}
+#seeingResults{
+    margin-bottom: 20px;
+}
+#ques_num{
+    padding-top: 10px;
+}
+@media screen and (min-width:300px) and (max-width: 800px) {
+    .submitButton button{
+        width: 80%
+    }
+    #ques_num{
+        padding-top: 10px;
+    }
+    #rate h3{
+        padding-left: 10px;
+    }
+}

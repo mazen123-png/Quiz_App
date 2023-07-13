@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <div id="container">
+        <div style="width: 100%;">
+            <h1 style="text-align: right;margin: 10px;">
+                Do You Know Me?
+            </h1>
+        </div>
+        
+        <div class="Quiz-header-container">
+            <h1 class="Quiz-header">Quiz App</h1>
+        </div>
+        <div class="ques_num">
+            <h1 id="ques_num">Question number: 1 / 5</h1>
+        </div>
+        <div class="questions">
+            <div class="ques_1" id="ques_1">
+                <h3>Do I Like vedio editing?</h3>
+                <span id="span"></span>
+            </div>
+            <div class="ques_1" id="ques_2">
+                <h3>Do I Like programming? </h3>
+            </div>
+            <div  class="ques_1" id="ques_3">
+                <h3>Do I Like to play basket ball? </h3>
+            </div>
+            <div class="ques_1" id="ques_4">
+                <h3>Do I Like drinking mango juice? </h3>
+            </div>
+            <div  class="ques_1" id="ques_5">
+                <h3>Do I Like eating fast food? </h3>
+            </div>
+        </div>
+        <div class="answers">
+            <div class="ans_1" id="trueAnswer">
+                <input type="radio" id="ans_1" name="answer" >
+                <label for="ans_1">Yes</label>
+            </div>
+            <div class="ans_2" >
+                <input type="radio" id="ans_2" name="answer">
+                <label for="ans_2">No</label>
+            </div>
+        </div>
+        <div class="submitButton">
+            <button id="submit">Submit</button>
+        </div>
+        
+    </div>
+    <div class="buttonResult" id="buttonResultContainer">
+        <button id="buttonResult">->See Results</button>
+    </div>
+    <div class="Results" id="ResultContainer">
+        <h3 id="seeingResults"></h3>
+        <div class="rate">
+            <h3 id="rate"></h3>
+        </div>
+    </div>
+    
+    <script src="./quiz.js"></script>
+</body>
+</html>
